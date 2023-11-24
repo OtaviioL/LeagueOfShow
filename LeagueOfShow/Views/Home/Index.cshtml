@@ -1,0 +1,329 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    .meu-elemento {
+        padding: 35px;
+    }
+
+    .sombra {
+        box-shadow: rgb(118, 120, 188) 3px 3px 6px 0px inset, rgba(202, 139, 245) -3px -3px 6px 1px inset;
+        border: 50px;
+        padding: 35px;
+    }
+
+    .ajuste-imagem {
+        width: 250px; /* Defina a largura desejada */
+        height: auto; /* Isso mantém a proporção original da imagem */
+        padding: 8px;
+    }
+
+    .grid {
+        display: grid;
+    }
+
+    .grid-template-columns-1 {
+        grid-template-columns: 300px 300px 300px 300px;
+    }
+
+    .div-transparente {
+        width: 200px;
+        height: 200px;
+        background-color: hsla(0, 100%, 50%, 0.5); /* Vermelho com 50% de transparência */
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .centralizar-imagem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 500px;
+        height: 300px;
+        perspective: 1000px;
+    }
+
+    .redondo {
+        border-radius: 50px;
+    }
+
+    .card-inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.999s;
+    }
+
+    .card:hover .card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .card-front,
+    .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+
+    .card-front {
+        background-color: #6A2C70;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        border: 10px solid #6A2C70;
+        border-radius: 10px;
+        justify-content: center;
+        font-size: 24px;
+        transform: rotateY(0deg);
+    }
+
+    .card-back {
+        background-color: #6D41BF;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        border: 10px solid #6D41BF;
+        border-radius: 10px;
+        justify-content: center;
+        font-size: 24px;
+        transform: rotateY(180deg);
+    }
+
+    .tamanho {
+        height: 675px;
+        width: 1200px;
+    }
+
+    .espaco {
+        padding: 24px;
+    }
+
+</style>
+
+<div class="text-center">
+    <h1 class="display-4">Seja Bem-Vindo Invocador</h1>
+    <h5>Venha conhecer esse universo musical!</h5>
+
+</div>
+
+<div class="meu-elemento">
+    <img src=https://culturageek.com.ar/wp-content/uploads/2023/10/Cultura-Geek-2023-10-04T130055.372.jpg>
+</div>
+
+<div class="espaco">
+
+    <p>
+        O universo musical de League of Legends (LoL) é uma sinfonia vibrante e diversificada que transcende as fronteiras do jogo. Composto por uma equipe de talentosos músicos e artistas,
+        o catálogo musical do LoL abrange uma ampla gama de estilos e gêneros, proporcionando uma experiência auditiva única para os jogadores e fãs. Desde as empolgantes trilhas sonoras das telas de login até as épicas músicas
+        tema dos campeonatos, o universo musical do LoL desempenha um papel fundamental na criação de uma atmosfera envolvente e emocionante. Cada campeão possui sua própria trilha sonora, refletindo sua personalidade, história e impacto
+        no mundo de Runeterra. Além disso, eventos especiais e skins muitas vezes trazem consigo novas composições, enriquecendo constantemente a experiência musical do jogo. Essa abordagem inovadora e criativa para a trilha sonora de um
+        jogo online contribui significativamente para a identidade única de
+        League of Legends, transformando-o não apenas em um jogo, mas em uma experiência sensorial completa.
+    </p>
+
+</div>
+<div class="sombra">
+    <div class="meu-elemento">
+        <h1>KDA</h1>
+        <section class="grid grid-template-columns-1">
+            <a href="https://youtu.be/ehEpRndu73E?si=sjgTU_zDXlg2XFd7">
+                <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/originals/b3/0e/54/b30e54bf0bddc2352761a5e35f343647.jpg"></div>
+            </a>
+            <a href="https://youtu.be/XeB4S2FhQ5Y?si=5_dMVIWvGvip5kih">
+                <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/564x/65/0b/2f/650b2f33c062dc62a4e8c7271eb19ca9.jpg"></div>
+            </a>
+            <a href="https://youtu.be/boknsu7RCVw?si=-jBBfObgwxXtBmpU">
+                <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/564x/87/69/cd/8769cd09f8619a714c25bffc6d083de3.jpg"></div>
+            </a>
+            <a href="https://youtu.be/7loVgekigZU?si=sUXzLZLN8EYvBeRN">
+                <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/564x/13/7c/5e/137c5e89f4d5f67b74a3c04a52fd17ce.jpg"></div>
+            </a>
+            <a href="https://youtu.be/Tw6lcOwO-D8?si=4WvX98bVrnP93p9M">
+                <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/564x/8f/39/49/8f394902570d967baf6ad0f752bb75dc.jpg"></div>
+            </a>
+        </section>
+    </div>
+    <div class="meu-elemento">
+        <h1>
+            Sobre K/DA
+        </h1>
+        <p>
+            K/DA é um grupo feminino virtual de K-pop que consiste em quatro versões temáticas dos  personagens de League of Legends  Ahri, Akali, Evelynn e Kai'Sa. Evelynn e Kai'Sa são dubladas pelas cantoras americanas Madison Beer e Jaira Burns, respectivamente, enquanto Ahri e Akali são dubladas pelas membros do (G)I-dle, Miyeon e Soyeon. K/DA foi desenvolvido pela Riot Games, a empresa por trás de  League of Legends , e apresentado no Campeonato Mundial de League of Legends de 2018 com uma performance ao vivo em realidade aumentada de sua primeira e única música, "Pop/Stars". Um videoclipe da música enviado ao YouTube posteriormente se tornou viral, ultrapassando 100 milhões de visualizações em um mês e alcançando mais de 250 milhões de visualizações, além de liderar a parada de vendas mundiais de músicas  digitais da Billboard .
+        </p>
+    </div>
+
+    <div class="meu-elemento ">
+        <h1 class="center">Musica</h1>
+
+        <div class="center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3VTkBuxU4yk?si=6QDLpAtJkZv4YU9B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="espaco"></div>
+
+
+<div>
+    <div class="sombra">
+        <div class="meu-elemento">
+            <h1>True Damage</h1>
+            <section class="grid grid-template-columns-1">
+                <a href="https://youtu.be/rQujudRRr0I?si=nuBAECAktExlNlsc">
+                    <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/564x/c8/c5/86/c8c586c57c2cfd107c9347ec81ff7f9d.jpg"></div>
+                </a>
+                <a href="https://youtu.be/kjba6GI5inw?si=cuteVn7psDHjfbKP">
+                    <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/564x/6b/c3/3e/6bc33e6cb8a0ad351c735dcbbd72ddf0.jpg"></div>
+                </a>
+                <a href="https://youtu.be/lGXYssZ63BU?si=PodfFJ37zZ91DQJR">
+                    <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/564x/1d/15/a5/1d15a508a2d23b9a7df22592873f02e1.jpg"></div>
+                </a>
+                <a href="https://youtu.be/xoDApmyVDAk?si=I_rkMcf5YRjUeEYr">
+                    <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/236x/82/b6/4f/82b64fd0e3807cec2ffe3230527b6452.jpg"></div>
+                </a>
+                <a href="https://youtu.be/3cFJPi_iTo0?si=KM91uopM-9osoYNA">
+                    <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/236x/b1/6d/ca/b16dca300d8515a9fa39c44a70924054.jpg"></div>
+                </a>
+            </section>
+        </div>
+
+        <div class="meu-elemento">
+            <h1>
+                Sobre True Damage
+            </h1>
+            <p>
+                A True Damage é uma banda virtual de hip hop composta por cinco campeões do MOBA. Suas vozes, entretanto, são interpretadas por artistas da vida real. Foram eles os responsáveis pela criação de GIANTS, uma das músicas apresentadas na cerimônia de abertura do Mundial de LoL de 2019.
+            </p>
+        </div>
+
+        <div class="meu-elemento ">
+            <h1 class="center">Musica</h1>
+
+            <div class="center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sVZpHFXcFJw?si=eLZYqIbWeUGOGla-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="espaco"></div>
+
+
+<div>
+    <div class="sombra">
+        <div class="meu-elemento">
+            <h1>HeartSteel</h1>
+            <section class="grid grid-template-columns-1">
+                <a href="https://youtu.be/BaA9s2Eajtc?si=k5fJdRuqKR32_52c">
+                    <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/736x/6a/dc/cd/6adccdedc2e291d6be66c8bd7b143c6b.jpg"></div>
+                </a>
+                <a href="https://youtu.be/BNrDZjeqfx0?si=qriEd0fOAAOM5SWO">
+                    <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/474x/e6/08/53/e60853ba9b35df514cfc8eadd3e8f370.jpg"></div>
+                </a>
+                <a href="https://youtu.be/Pgm5nEyZBA0?si=bZ5AmahJOs9kEoEu">
+                    <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/236x/a3/f6/f2/a3f6f2e0d52a6a3aa19449cb6eb8293a.jpg"></div>
+                </a>
+                <a href="https://youtu.be/J_0GRQywB5w?si=xHZlTH9O_oTHfzTn">
+                    <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/236x/91/0a/2a/910a2a1851de819f4f17a33cdfaa188a.jpg"></div>
+                </a>
+                <a href="https://youtu.be/O7zUDvz8rUU?si=h9SUwS_9_m1UE_fd">
+                    <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/236x/ca/45/d9/ca45d990cd8ceb37ef679113a63ef622.jpg"></div>
+                </a>
+                <a href="https://youtu.be/r5mhWtkgOrY?si=xfXDUvnupf_xLowg">
+                    <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/564x/30/23/27/302327800bb906b3bcfe9327a78178f3.jpg"></div>
+                </a>
+            </section>
+        </div>
+
+        <div class="meu-elemento">
+            <h1>
+                Sobre HeartSteel
+            </h1>
+            <p>
+                Heartsteel é uma banda estrelada por versões reinventadas dos amados campeões de League of Legends: Ezreal, Sett, K'Sante, Kayn, Yone e Aphelios. O grupo conta com a colaboração de Baekhyun (Ezreal), ØZI (Sett), Tobi Lou (K'Sante) e Cal Scruby (Kayn).
+                Além da nova música, os jogadores de League of Legends e Wild Rift podem esperar novas skins dos membros da banda em seus trajes PARANOIA.
+            </p>
+        </div>
+
+        <div class="meu-elemento ">
+            <h1 class="center">Musica</h1>
+
+            <div class="center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MDErQ1KTzaI?si=_M5VWhjO2LpxM9VH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+<div class="espaco"></div>
+
+
+<div>
+    <div class="sombra">
+        <div class="meu-elemento">
+            <h1>PentaKill</h1>
+            <section class="grid grid-template-columns-1">
+                <a href="https://youtu.be/cBgqKg3pkh4?si=B3wBOFq6nkWCSxWN">
+                    <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/236x/5d/46/ad/5d46ade7bd938787dd54c42c36acc6b1.jpg"></div>
+                </a>
+                <a href="https://youtu.be/V4pbBwFlNiI?si=jAkdFI5hwiklPxjT">
+                    <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/236x/2e/d6/20/2ed6206c3c067673fda30d7c6d7f728f.jpg"></div>
+                </a>
+                <a href="https://youtu.be/sK_UV7vEE9c?si=oWhmGsdtudBruoAi">
+                    <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/236x/5b/22/4b/5b224b2ab0ac6f7a1f02324cf79ea02e.jpg"></div>
+                </a>
+                <a href="https://youtu.be/GYdzXNKpCwU?si=3EqMBuhlGk58Ku2o">
+                    <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/736x/98/91/0c/98910cfc9002542f93c3f556ce64d0b4.jpg"></div>
+                </a>
+                <a href="https://youtu.be/pPszLR8OODY?si=STgGaPfO4Vf2WUI7">
+                    <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/236x/8d/76/bc/8d76bcedfc1e551a70d13c8d4c765fad.jpg"></div>
+                </a>
+                <a href="https://youtu.be/fdzWMdwwvNM?si=fpI15PIpUFAatRPl">
+                    <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/236x/25/11/93/2511933f4003099be22f6d738c2152f3.jpg"></div>
+                </a>
+                <a href="https://youtu.be/Wkc5rQTDzuk?si=S1nmCkbEnVJU8Rdu">
+                    <div><img class="ajuste-imagem redondo" src="https://i.pinimg.com/236x/89/41/a2/8941a2f1028f70052af027f470d0441e.jpg"></div>
+                </a>
+            </section>
+        </div>
+
+        <div class="meu-elemento">
+            <h1>
+                Sobre PentaKill
+            </h1>
+            <p>
+                Pentakill é uma banda virtual de heavy metal associada ao universo de League of Legends. As músicas do grupo são compostas e executadas principalmente pela equipe de música interna da Riot Games, mas apresenta participações especiais de vários músicos de metal renomados.
+                O segundo álbum da banda, Grasp of the Undying, alcançou a primeira posição nas paradas de metal do iTunes em 2017. Por sua vez, o seu terceiro álbum,
+                III: Lost Chapter, foi lançado em 2021 e apresentado em um concerto interativo "ao vivo".
+            </p>
+        </div>
+
+        <div class="meu-elemento ">
+            <h1 class="center">Musica</h1>
+
+            <div class="center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gU_lTpsw3bA?si=8dJDu94u_5f9KzI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
